@@ -46,7 +46,7 @@ public class FileUploadController {
         return "webpage";
     }
 
-    @PostMapping("/webpage")
+    @PostMapping("/upload")
     public String uploadLogFile(@RequestParam("logfile") MultipartFile logFile, Model model) {
         Long userId = getCurrentUserId();
 
